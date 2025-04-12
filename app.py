@@ -1,3 +1,4 @@
+
 from flask import Flask, request, jsonify
 import pandas as pd
 import requests
@@ -20,7 +21,7 @@ def fetch_product_data():
             extracted_data.append({
                 "product_id": product.get("code", "Unknown"),
                 "name": product.get("product_name", "Unknown"),
-                "image": product.get("image_front_url", ""),
+                "image": product.get("image_front_url", ""),  # Image support
                 "tags": product.get("labels", "") + " " + product.get("categories", "") + " " + product.get("allergens", "")
             })
         return extracted_data
