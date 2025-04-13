@@ -2,1008 +2,757 @@
   {
     "name": "Oatmeal with Fruits",
     "category": "breakfast",
-    "tags": "vegan dairy-free high-fiber oats banana almond-milk",
+    "tags": "oats banana almond milk vegan high-fiber dairy-free",
     "calories": 300,
-    "ingredients": [
-      "oats",
-      "banana",
-      "almond milk"
-    ]
+    "ingredients": ["oats", "banana", "almond milk"]
   },
   {
     "name": "Scrambled Eggs",
     "category": "breakfast",
-    "tags": "high-protein dairy eggs butter",
+    "tags": "eggs butter high-protein dairy",
     "calories": 400,
-    "ingredients": [
-      "eggs",
-      "butter"
-    ]
+    "ingredients": ["eggs", "butter"]
   },
   {
     "name": "Grilled Chicken Salad",
     "category": "lunch",
-    "tags": "high-protein gluten-free chicken lettuce tomatoes olive-oil",
+    "tags": "chicken breast lettuce tomatoes olive oil high-protein gluten-free",
     "calories": 450,
-    "ingredients": [
-      "chicken breast",
-      "lettuce",
-      "tomatoes",
-      "olive oil"
-    ]
+    "ingredients": ["chicken breast", "lettuce", "tomatoes", "olive oil"]
   },
   {
     "name": "Vegetable Stir-Fry",
     "category": "dinner",
-    "tags": "vegan soy-based dairy-free tofu bell-peppers soy-sauce",
+    "tags": "tofu bell peppers soy sauce vegan soy-based dairy-free",
     "calories": 400,
-    "ingredients": [
-      "tofu",
-      "bell peppers",
-      "soy sauce"
-    ]
+    "ingredients": ["tofu", "bell peppers", "soy sauce"]
+  },
+  {
+    "name": "Pasta Primavera",
+    "category": "lunch",
+    "tags": "pasta tomatoes olive oil broccoli vegetarian dairy-free",
+    "calories": 600,
+    "ingredients": ["pasta", "tomatoes", "olive oil", "broccoli"]
   },
   {
     "name": "Steak with Quinoa",
     "category": "dinner",
-    "tags": "high-protein gluten-free beef-steak quinoa asparagus",
+    "tags": "beef steak quinoa asparagus high-protein gluten-free",
     "calories": 700,
-    "ingredients": [
-      "beef steak",
-      "quinoa",
-      "asparagus"
-    ]
+    "ingredients": ["beef steak", "quinoa", "asparagus"]
   },
   {
-    "name": "Cheese Omelette",
+    "name": "Blueberry Protein Pancakes",
     "category": "breakfast",
-    "tags": "high-protein dairy eggs cheese",
-    "calories": 350,
-    "ingredients": [
-      "eggs",
-      "cheese"
-    ]
+    "tags": "whole wheat flour blueberries protein powder milk egg vegetarian high-protein dairy",
+    "calories": 370,
+    "ingredients": ["whole wheat flour", "blueberries", "egg", "milk", "baking powder", "protein powder"]
   },
   {
-    "name": "Tuna Sandwich",
+    "name": "Tofu and Vegetable Stir-Fry",
     "category": "lunch",
-    "tags": "high-protein contains-gluten tuna mayo whole-grain-bread",
+    "tags": "tofu broccoli carrot soy sauce garlic ginger vegan high-fiber dairy-free",
+    "calories": 410,
+    "ingredients": ["tofu", "broccoli", "carrot", "soy sauce", "garlic", "ginger"]
+  },
+  {
+    "name": "Grilled Shrimp Tacos",
+    "category": "lunch",
+    "tags": "shrimp corn tortillas cabbage lime avocado high-protein shellfish gluten",
+    "calories": 430,
+    "ingredients": ["shrimp", "corn tortillas", "cabbage", "lime", "avocado"]
+  },
+  {
+    "name": "Chicken Teriyaki with Rice",
+    "category": "dinner",
+    "tags": "chicken breast soy sauce brown sugar rice garlic ginger high-protein soy",
+    "calories": 540,
+    "ingredients": ["chicken breast", "soy sauce", "brown sugar", "rice", "garlic", "ginger"]
+  },
+  {
+    "name": "Greek Yogurt Parfait",
+    "category": "breakfast",
+    "tags": "greek yogurt berries granola honey high-protein dairy",
+    "calories": 350,
+    "ingredients": ["greek yogurt", "blueberries", "strawberries", "granola", "honey"]
+  },
+  {
+    "name": "Vegan Avocado Toast",
+    "category": "breakfast",
+    "tags": "avocado whole grain bread lemon vegan fiber-rich dairy-free",
+    "calories": 280,
+    "ingredients": ["avocado", "whole grain bread", "lemon", "chili flakes"]
+  },
+  {
+    "name": "Chickpea Salad Bowl",
+    "category": "lunch",
+    "tags": "chickpeas cucumber tomato olive oil lemon juice vegan high-fiber gluten-free",
+    "calories": 420,
+    "ingredients": ["chickpeas", "cucumber", "tomato", "olive oil", "lemon juice"]
+  },
+  {
+    "name": "Turkey and Cheese Sandwich",
+    "category": "lunch",
+    "tags": "turkey breast cheese whole wheat bread lettuce protein dairy",
+    "calories": 470,
+    "ingredients": ["turkey breast", "cheddar cheese", "whole wheat bread", "lettuce"]
+  },
+  {
+    "name": "Beef Stir-Fry with Veggies",
+    "category": "dinner",
+    "tags": "beef broccoli carrots soy sauce garlic ginger high-protein soy",
+    "calories": 620,
+    "ingredients": ["beef strips", "broccoli", "carrots", "soy sauce", "garlic", "ginger"]
+  },
+  {
+    "name": "Quinoa Stuffed Peppers",
+    "category": "dinner",
+    "tags": "quinoa bell peppers black beans corn vegan gluten-free fiber-rich",
+    "calories": 480,
+    "ingredients": ["quinoa", "bell peppers", "black beans", "corn", "tomato paste"]
+  },
+  {
+    "name": "Peanut Butter Banana Smoothie",
+    "category": "breakfast",
+    "tags": "banana peanut butter almond milk oats high-protein vegan dairy-free",
+    "calories": 390,
+    "ingredients": ["banana", "peanut butter", "almond milk", "oats"]
+  },
+  {
+    "name": "Grilled Salmon with Asparagus",
+    "category": "dinner",
+    "tags": "salmon asparagus olive oil lemon high-protein omega-3 dairy-free",
+    "calories": 560,
+    "ingredients": ["salmon", "asparagus", "olive oil", "lemon"]
+  },
+  {
+    "name": "Vegetarian Chili",
+    "category": "lunch",
+    "tags": "kidney beans black beans tomato chili powder vegan high-fiber dairy-free",
     "calories": 500,
-    "ingredients": [
-      "tuna",
-      "mayonnaise",
-      "whole grain bread"
-    ]
+    "ingredients": ["kidney beans", "black beans", "tomatoes", "onion", "chili powder"]
+  },
+  {
+    "name": "Mushroom Spinach Omelette",
+    "category": "breakfast",
+    "tags": "eggs spinach mushrooms cheese high-protein dairy",
+    "calories": 420,
+    "ingredients": ["eggs", "spinach", "mushrooms", "cheese"]
+  },
+  {
+    "name": "Caprese Salad",
+    "category": "lunch",
+    "tags": "tomato mozzarella basil olive oil vegetarian dairy gluten-free",
+    "calories": 330,
+    "ingredients": ["tomatoes", "mozzarella", "basil", "olive oil", "balsamic glaze"]
+  },
+  {
+    "name": "Grilled Shrimp Skewers",
+    "category": "dinner",
+    "tags": "shrimp garlic lemon olive oil high-protein seafood dairy-free",
+    "calories": 480,
+    "ingredients": ["shrimp", "garlic", "lemon juice", "olive oil", "parsley"]
+  },
+  {
+    "name": "Berry Chia Pudding",
+    "category": "breakfast",
+    "tags": "chia seeds almond milk mixed berries vegan high-fiber dairy-free",
+    "calories": 320,
+    "ingredients": ["chia seeds", "almond milk", "mixed berries", "maple syrup"]
+  },
+  {
+    "name": "Chicken Caesar Wrap",
+    "category": "lunch",
+    "tags": "chicken lettuce parmesan tortilla high-protein dairy",
+    "calories": 530,
+    "ingredients": ["grilled chicken", "romaine lettuce", "parmesan", "tortilla", "caesar dressing"]
   },
   {
     "name": "Lentil Soup",
     "category": "dinner",
-    "tags": "vegan high-fiber gluten-free lentils carrots celery",
+    "tags": "lentils carrots celery onion vegan gluten-free high-fiber dairy-free",
+    "calories": 410,
+    "ingredients": ["lentils", "carrots", "celery", "onion", "vegetable broth"]
+  },
+  {
+    "name": "Egg and Avocado Toast",
+    "category": "breakfast",
+    "tags": "egg avocado whole grain bread high-protein fiber-rich",
+    "calories": 370,
+    "ingredients": ["egg", "avocado", "whole grain bread", "salt", "pepper"]
+  },
+  {
+    "name": "Stuffed Zucchini Boats",
+    "category": "dinner",
+    "tags": "zucchini ground turkey tomato sauce cheese low-carb dairy",
+    "calories": 540,
+    "ingredients": ["zucchini", "ground turkey", "tomato sauce", "cheddar cheese"]
+  },
+  {
+    "name": "Pesto Pasta Salad",
+    "category": "lunch",
+    "tags": "pasta pesto cherry tomatoes parmesan vegetarian dairy",
+    "calories": 520,
+    "ingredients": ["pasta", "pesto", "cherry tomatoes", "parmesan cheese"]
+  },
+  {
+    "name": "Fruit & Nut Oatmeal",
+    "category": "breakfast",
+    "tags": "oats almonds raisins banana honey high-fiber vegetarian dairy-free",
+    "calories": 390,
+    "ingredients": ["oats", "almonds", "raisins", "banana", "honey"]
+  },
+  {
+    "name": "Tofu Stir-Fry",
+    "category": "dinner",
+    "tags": "tofu broccoli bell pepper soy sauce vegan high-protein dairy-free",
+    "calories": 440,
+    "ingredients": ["tofu", "broccoli", "bell pepper", "soy sauce", "garlic"]
+  },
+  {
+    "name": "Huevos Rancheros",
+    "category": "breakfast",
+    "tags": "eggs black beans tortillas salsa avocado high-protein dairy-free",
+    "calories": 380,
+    "ingredients": ["eggs", "corn tortillas", "black beans", "salsa", "avocado"]
+  },
+  {
+    "name": "Thai Chicken Lettuce Wraps",
+    "category": "lunch",
+    "tags": "chicken lettuce carrots peanut sauce high-protein dairy-free",
+    "calories": 460,
+    "ingredients": ["chicken breast", "romaine lettuce", "carrots", "peanut sauce", "cilantro"]
+  },
+  {
+    "name": "Sweet Potato and Kale Hash",
+    "category": "breakfast",
+    "tags": "sweet potatoes kale eggs onion vegetarian high-fiber dairy-free",
+    "calories": 400,
+    "ingredients": ["sweet potatoes", "kale", "onion", "olive oil", "eggs"]
+  },
+  {
+    "name": "Bulgur Wheat Tabbouleh",
+    "category": "lunch",
+    "tags": "bulgur wheat parsley tomatoes cucumber vegan high-fiber dairy-free",
+    "calories": 360,
+    "ingredients": ["bulgur wheat", "parsley", "tomatoes", "cucumber", "lemon juice"]
+  },
+  {
+    "name": "Grilled Shrimp Skewers",
+    "category": "dinner",
+    "tags": "shrimp bell peppers zucchini garlic high-protein dairy-free gluten-free",
+    "calories": 520,
+    "ingredients": ["shrimp", "bell peppers", "zucchini", "olive oil", "garlic"]
+  },
+  {
+    "name": "Ricotta and Spinach Stuffed Shells",
+    "category": "dinner",
+    "tags": "ricotta spinach pasta tomato sauce vegetarian dairy high-protein",
+    "calories": 610,
+    "ingredients": ["ricotta cheese", "spinach", "jumbo pasta shells", "tomato sauce", "parmesan"]
+  },
+  {
+    "name": "Egg Salad Sandwich",
+    "category": "lunch",
+    "tags": "eggs whole grain bread mayonnaise lettuce high-protein",
+    "calories": 470,
+    "ingredients": ["eggs", "mayonnaise", "whole grain bread", "lettuce", "mustard"]
+  },
+  {
+    "name": "Savory Oatmeal with Mushrooms",
+    "category": "breakfast",
+    "tags": "oats mushrooms spinach eggs vegetarian high-fiber dairy-free",
+    "calories": 390,
+    "ingredients": ["steel-cut oats", "mushrooms", "spinach", "egg", "olive oil"]
+  },
+  {
+    "name": "Turkey Chili",
+    "category": "dinner",
+    "tags": "ground turkey beans tomatoes chili powder high-protein dairy-free",
+    "calories": 580,
+    "ingredients": ["ground turkey", "kidney beans", "tomatoes", "onion", "chili powder"]
+  },
+  {
+    "name": "Pita with Hummus and Veggies",
+    "category": "lunch",
+    "tags": "pita hummus cucumber carrots vegetarian dairy-free high-fiber",
+    "calories": 420,
+    "ingredients": ["whole wheat pita", "hummus", "carrots", "cucumber", "red bell pepper"]
+  },
+    {
+    "name": "Sweet Potato and Black Bean Tacos",
+    "category": "lunch",
+    "tags": "sweet potatoes black beans corn tortillas avocado vegan high-fiber dairy-free",
+    "calories": 450,
+    "ingredients": ["sweet potatoes", "black beans", "corn tortillas", "avocado", "lime juice", "cilantro"]
+  },
+  {
+    "name": "Mushroom and Spinach Frittata",
+    "category": "breakfast",
+    "tags": "eggs mushrooms spinach parmesan cheese high-protein vegetarian dairy",
+    "calories": 380,
+    "ingredients": ["eggs", "mushrooms", "spinach", "parmesan cheese", "olive oil"]
+  },
+  {
+    "name": "Lemon Herb Grilled Chicken",
+    "category": "dinner",
+    "tags": "chicken breast lemon rosemary garlic high-protein gluten-free dairy-free",
+    "calories": 520,
+    "ingredients": ["chicken breast", "lemon juice", "rosemary", "garlic", "olive oil"]
+  },
+  {
+    "name": "Quinoa and Roasted Vegetable Bowl",
+    "category": "lunch",
+    "tags": "quinoa zucchini bell peppers eggplant vegan high-fiber gluten-free dairy-free",
+    "calories": 470,
+    "ingredients": ["quinoa", "zucchini", "bell peppers", "eggplant", "olive oil", "balsamic vinegar"]
+  },
+  {
+    "name": "Apple Cinnamon Overnight Oats",
+    "category": "breakfast",
+    "tags": "oats apples cinnamon almond milk vegan high-fiber dairy-free",
+    "calories": 350,
+    "ingredients": ["rolled oats", "apples", "cinnamon", "almond milk", "maple syrup"]
+  },
+  {
+    "name": "Beef and Vegetable Stir-Fry",
+    "category": "dinner",
+    "tags": "beef broccoli carrots soy sauce high-protein dairy-free",
+    "calories": 600,
+    "ingredients": ["beef strips", "broccoli", "carrots", "soy sauce", "garlic", "ginger"]
+  },
+  {
+    "name": "Chickpea and Avocado Salad",
+    "category": "lunch",
+    "tags": "chickpeas avocado cherry tomatoes cucumber vegan high-fiber gluten-free dairy-free",
+    "calories": 430,
+    "ingredients": ["chickpeas", "avocado", "cherry tomatoes", "cucumber", "lemon juice", "olive oil"]
+  },
+  {
+    "name": "Banana Nut Muffins",
+    "category": "breakfast",
+    "tags": "bananas walnuts whole wheat flour eggs vegetarian dairy",
+    "calories": 300,
+    "ingredients": ["bananas", "walnuts", "whole wheat flour", "eggs", "honey", "baking powder"]
+  },
+  {
+    "name": "Shrimp and Quinoa Stir-Fry",
+    "category": "dinner",
+    "tags": "shrimp quinoa snow peas soy sauce high-protein dairy-free",
+    "calories": 550,
+    "ingredients": ["shrimp", "quinoa", "snow peas", "carrots", "soy sauce", "garlic"]
+  },
+  {
+    "name": "Greek Salad with Grilled Chicken",
+    "category": "lunch",
+    "tags": "chicken breast feta cheese cucumbers olives high-protein gluten-free dairy",
+    "calories": 480,
+    "ingredients": ["grilled chicken breast", "feta cheese", "cucumbers", "olives", "tomatoes", "olive oil"]
+  },
+  {
+    "name": "Shakshouka",
+    "category": "breakfast",
+    "tags": "eggs tomatoes bell peppers onions garlic cumin paprika vegetarian dairy-free",
+    "calories": 350,
+    "ingredients": ["eggs", "tomatoes", "bell peppers", "onions", "garlic", "cumin", "paprika", "olive oil"]
+  },
+  {
+    "name": "Egg Bhurji",
+    "category": "breakfast",
+    "tags": "eggs onions tomatoes green chilies turmeric garam masala high-protein dairy-free",
+    "calories": 300,
+    "ingredients": ["eggs", "onions", "tomatoes", "green chilies", "turmeric", "garam masala", "cilantro"]
+  },
+  {
+    "name": "Dutch Baby Pancake",
+    "category": "breakfast",
+    "tags": "eggs flour milk butter vanilla cinnamon vegetarian dairy",
+    "calories": 400,
+    "ingredients": ["eggs", "all-purpose flour", "milk", "butter", "vanilla extract", "cinnamon", "powdered sugar"]
+  },
+  {
+    "name": "Tongue Toast",
+    "category": "lunch",
+    "tags": "beef tongue eggs onions black pepper high-protein dairy",
+    "calories": 450,
+    "ingredients": ["beef tongue", "eggs", "onions", "butter", "black pepper", "bread"]
+  },
+  {
+    "name": "Akara with Pap",
+    "category": "breakfast",
+    "tags": "black-eyed peas onions peppers palm oil vegan gluten-free dairy-free",
+    "calories": 500,
+    "ingredients": ["black-eyed peas", "onions", "scotch bonnet peppers", "salt", "palm oil", "fermented corn pap"]
+  },
+  {
+    "name": "Miso Glazed Eggplant",
+    "category": "lunch",
+    "tags": "eggplant miso paste sesame seeds scallions vegan gluten-free dairy-free",
+    "calories": 380,
+    "ingredients": ["eggplant", "miso paste", "mirin", "sugar", "soy sauce", "sesame seeds", "scallions"]
+  },
+  {
+    "name": "Chili-Lime Chicken Bowl",
+    "category": "dinner",
+    "tags": "chicken breast quinoa corn black beans avocado high-protein gluten-free dairy-free",
+    "calories": 550,
+    "ingredients": ["chicken breast", "quinoa", "corn", "black beans", "avocado", "lime juice", "cilantro"]
+  },
+  {
+    "name": "Butternut Squash and Chickpea Curry",
+    "category": "dinner",
+    "tags": "butternut squash chickpeas coconut milk curry powder vegan gluten-free dairy-free",
+    "calories": 480,
+    "ingredients": ["butternut squash", "chickpeas", "coconut milk", "onions", "garlic", "curry powder", "spinach"]
+  },
+  {
+    "name": "Zucchini Noodles with Pesto",
+    "category": "lunch",
+    "tags": "zucchini basil pine nuts garlic parmesan cheese vegetarian gluten-free dairy",
+    "calories": 400,
+    "ingredients": ["zucchini", "basil", "pine nuts", "garlic", "parmesan cheese", "olive oil"]
+  },
+  {
+    "name": "Sweet Potato and Black Bean Tacos",
+    "category": "dinner",
+    "tags": "sweet potatoes black beans corn tortillas avocado vegan gluten-free dairy-free",
+    "calories": 470,
+    "ingredients": ["sweet potatoes", "black beans", "corn tortillas", "avocado", "lime juice", "cilantro"]
+  },
+    {
+    "name": "Huevos Rancheros",
+    "category": "breakfast",
+    "tags": "eggs corn tortillas black beans salsa avocado high-protein gluten-free dairy-free",
+    "calories": 420,
+    "ingredients": ["eggs", "corn tortillas", "black beans", "salsa", "avocado", "cilantro"]
+  },
+  {
+    "name": "Mediterranean Chickpea Salad",
+    "category": "lunch",
+    "tags": "chickpeas cucumber cherry tomatoes feta cheese olives vegetarian high-fiber gluten-free",
+    "calories": 450,
+    "ingredients": ["chickpeas", "cucumber", "cherry tomatoes", "feta cheese", "kalamata olives", "olive oil", "lemon juice"]
+  },
+  {
+    "name": "Spaghetti Squash Pad Thai",
+    "category": "dinner",
+    "tags": "spaghetti squash tofu peanuts bean sprouts vegan gluten-free dairy-free",
+    "calories": 500,
+    "ingredients": ["spaghetti squash", "tofu", "bean sprouts", "peanuts", "green onions", "lime", "soy sauce"]
+  },
+  {
+    "name": "Avocado Toast with Poached Egg",
+    "category": "breakfast",
+    "tags": "avocado whole grain bread eggs high-protein vegetarian",
+    "calories": 350,
+    "ingredients": ["avocado", "whole grain bread", "eggs", "lemon juice", "red pepper flakes"]
+  },
+  {
+    "name": "Quinoa and Black Bean Burrito Bowl",
+    "category": "lunch",
+    "tags": "quinoa black beans corn bell peppers avocado vegan high-fiber gluten-free dairy-free",
+    "calories": 480,
+    "ingredients": ["quinoa", "black beans", "corn", "bell peppers", "avocado", "lime juice", "cilantro"]
+  },
+  {
+    "name": "Grilled Lemon Herb Chicken",
+    "category": "dinner",
+    "tags": "chicken breast lemon thyme garlic high-protein gluten-free dairy-free",
+    "calories": 550,
+    "ingredients": ["chicken breast", "lemon juice", "thyme", "garlic", "olive oil"]
+  },
+  {
+    "name": "Peanut Butter Banana Smoothie",
+    "category": "breakfast",
+    "tags": "banana peanut butter almond milk oats vegan dairy-free gluten-free",
+    "calories": 400,
+    "ingredients": ["banana", "peanut butter", "almond milk", "rolled oats", "chia seeds"]
+  },
+  {
+    "name": "Caprese Sandwich",
+    "category": "lunch",
+    "tags": "mozzarella tomatoes basil balsamic vinegar vegetarian dairy",
+    "calories": 470,
+    "ingredients": ["fresh mozzarella", "tomatoes", "basil", "balsamic vinegar", "ciabatta bread"]
+  },
+  {
+    "name": "Beef Stir-Fry with Vegetables",
+    "category": "dinner",
+    "tags": "beef broccoli bell peppers soy sauce high-protein dairy-free",
+    "calories": 600,
+    "ingredients": ["beef strips", "broccoli", "bell peppers", "soy sauce", "garlic", "ginger"]
+  },
+  {
+    "name": "Mango Chia Pudding",
+    "category": "breakfast",
+    "tags": "mango chia seeds coconut milk vegan gluten-free dairy-free",
     "calories": 320,
-    "ingredients": [
-      "lentils",
-      "carrots",
-      "celery"
-    ]
+    "ingredients": ["mango", "chia seeds", "coconut milk", "maple syrup"]
   },
-  {
-    "name": "Custom Meal 9",
-    "category": "dinner",
-    "tags": "custom-tag3 high-protein ingredient8 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient8",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 10",
-    "category": "breakfast",
-    "tags": "custom-tag4 contains-dairy ingredient9",
-    "calories": 700,
-    "ingredients": [
-      "ingredient9",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 11",
+    {
+    "name": "Chickpea Buddha Bowl",
     "category": "lunch",
-    "tags": "custom-tag0 high-protein ingredient10 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient10",
-      "spice2"
-    ]
+    "tags": "vegan gluten-free chickpeas quinoa avocado vegetables high-fiber",
+    "calories": 510,
+    "ingredients": ["chickpeas", "quinoa", "avocado", "spinach", "carrots", "tahini sauce"]
   },
   {
-    "name": "Custom Meal 12",
+    "name": "Baked Tilapia with Lemon",
     "category": "dinner",
-    "tags": "custom-tag1 contains-dairy ingredient11",
-    "calories": 300,
-    "ingredients": [
-      "ingredient11",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 13",
-    "category": "breakfast",
-    "tags": "custom-tag2 high-protein ingredient12 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient12",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 14",
-    "category": "lunch",
-    "tags": "custom-tag3 contains-dairy ingredient13",
+    "tags": "low-fat high-protein tilapia fish lemon garlic gluten-free",
     "calories": 400,
-    "ingredients": [
-      "ingredient13",
-      "spice1"
-    ]
+    "ingredients": ["tilapia", "lemon", "olive oil", "garlic", "parsley"]
   },
   {
-    "name": "Custom Meal 15",
-    "category": "dinner",
-    "tags": "custom-tag4 high-protein ingredient14 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient14",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 16",
+    "name": "Avocado Toast",
     "category": "breakfast",
-    "tags": "custom-tag0 contains-dairy ingredient15",
-    "calories": 500,
-    "ingredients": [
-      "ingredient15",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 17",
-    "category": "lunch",
-    "tags": "custom-tag1 high-protein ingredient16 vegan",
-    "calories": 550,
-    "ingredients": [
-      "ingredient16",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 18",
-    "category": "dinner",
-    "tags": "custom-tag2 contains-dairy ingredient17",
-    "calories": 600,
-    "ingredients": [
-      "ingredient17",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 19",
-    "category": "breakfast",
-    "tags": "custom-tag3 high-protein ingredient18 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient18",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 20",
-    "category": "lunch",
-    "tags": "custom-tag4 contains-dairy ingredient19",
-    "calories": 700,
-    "ingredients": [
-      "ingredient19",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 21",
-    "category": "dinner",
-    "tags": "custom-tag0 high-protein ingredient20 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient20",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 22",
-    "category": "breakfast",
-    "tags": "custom-tag1 contains-dairy ingredient21",
-    "calories": 300,
-    "ingredients": [
-      "ingredient21",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 23",
-    "category": "lunch",
-    "tags": "custom-tag2 high-protein ingredient22 vegan",
+    "tags": "vegetarian avocado wholegrain bread healthy-fats breakfast",
     "calories": 350,
-    "ingredients": [
-      "ingredient22",
-      "spice2"
-    ]
+    "ingredients": ["avocado", "wholegrain bread", "lemon juice", "chili flakes"]
   },
   {
-    "name": "Custom Meal 24",
+    "name": "Lamb Kofta with Yogurt Sauce",
     "category": "dinner",
-    "tags": "custom-tag3 contains-dairy ingredient23",
-    "calories": 400,
-    "ingredients": [
-      "ingredient23",
-      "spice3"
-    ]
+    "tags": "high-protein lamb yogurt spices mediterranean",
+    "calories": 610,
+    "ingredients": ["ground lamb", "yogurt", "garlic", "parsley", "cumin"]
   },
   {
-    "name": "Custom Meal 25",
-    "category": "breakfast",
-    "tags": "custom-tag4 high-protein ingredient24 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient24",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 26",
+    "name": "Caprese Salad with Pesto",
     "category": "lunch",
-    "tags": "custom-tag0 contains-dairy ingredient25",
-    "calories": 500,
-    "ingredients": [
-      "ingredient25",
-      "spice1"
-    ]
+    "tags": "vegetarian gluten-free tomatoes mozzarella pesto basil salad",
+    "calories": 420,
+    "ingredients": ["tomatoes", "mozzarella", "basil", "pesto", "olive oil"]
   },
   {
-    "name": "Custom Meal 27",
+    "name": "Omelette with Feta and Spinach",
+    "category": "breakfast",
+    "tags": "high-protein low-carb eggs feta spinach gluten-free breakfast",
+    "calories": 340,
+    "ingredients": ["eggs", "feta cheese", "spinach", "olive oil"]
+  },
+  {
+    "name": "Miso Soup with Tofu",
+    "category": "lunch",
+    "tags": "vegan gluten-free tofu miso seaweed light-meal",
+    "calories": 200,
+    "ingredients": ["miso paste", "tofu", "wakame", "green onions", "soy sauce"]
+  },
+  {
+    "name": "Banana Pancakes",
+    "category": "breakfast",
+    "tags": "vegetarian bananas eggs oats sweet breakfast",
+    "calories": 370,
+    "ingredients": ["banana", "eggs", "oats", "vanilla extract"]
+  },
+  {
+    "name": "Grilled Halloumi Wrap",
+    "category": "lunch",
+    "tags": "vegetarian halloumi wrap tomatoes lettuce easy-lunch",
+    "calories": 480,
+    "ingredients": ["halloumi cheese", "wholegrain wrap", "lettuce", "tomatoes", "tzatziki"]
+  },
+  {
+    "name": "Stuffed Bell Peppers",
     "category": "dinner",
-    "tags": "custom-tag1 high-protein ingredient26 vegan",
+    "tags": "gluten-free rice ground beef vegetables baked healthy",
     "calories": 550,
-    "ingredients": [
-      "ingredient26",
-      "spice2"
-    ]
+    "ingredients": ["bell peppers", "ground beef", "rice", "tomato sauce", "onions"]
   },
   {
-    "name": "Custom Meal 28",
+    "name": "Kale and Apple Smoothie",
     "category": "breakfast",
-    "tags": "custom-tag2 contains-dairy ingredient27",
-    "calories": 600,
-    "ingredients": [
-      "ingredient27",
-      "spice3"
-    ]
+    "tags": "vegan dairy-free apple kale smoothie high-fiber",
+    "calories": 310,
+    "ingredients": ["kale", "apple", "banana", "almond milk", "chia seeds"]
   },
   {
-    "name": "Custom Meal 29",
-    "category": "lunch",
-    "tags": "custom-tag3 high-protein ingredient28 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient28",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 30",
+    "name": "Spaghetti Squash with Marinara",
     "category": "dinner",
-    "tags": "custom-tag4 contains-dairy ingredient29",
-    "calories": 700,
-    "ingredients": [
-      "ingredient29",
-      "spice1"
-    ]
+    "tags": "low-carb vegetarian gluten-free spaghetti-squash marinara",
+    "calories": 390,
+    "ingredients": ["spaghetti squash", "marinara sauce", "parmesan", "basil"]
   },
   {
-    "name": "Custom Meal 31",
-    "category": "breakfast",
-    "tags": "custom-tag0 high-protein ingredient30 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient30",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 32",
+    "name": "Chili Con Carne",
     "category": "lunch",
-    "tags": "custom-tag1 contains-dairy ingredient31",
+    "tags": "high-protein beef beans chili spicy comfort-food",
+    "calories": 600,
+    "ingredients": ["ground beef", "kidney beans", "tomatoes", "onions", "spices"]
+  },
+  {
+    "name": "Avocado and Egg Breakfast Bowl",
+    "category": "breakfast",
+    "tags": "high-protein avocado eggs gluten-free breakfast",
+    "calories": 420,
+    "ingredients": ["avocado", "eggs", "sweet potato", "spinach"]
+  },
+  {
+    "name": "Lentil and Vegetable Stew",
+    "category": "dinner",
+    "tags": "vegan lentils high-fiber gluten-free hearty",
+    "calories": 480,
+    "ingredients": ["lentils", "carrots", "celery", "potatoes", "tomato paste"]
+  },
+  {
+    "name": "Hummus and Veggie Wrap",
+    "category": "lunch",
+    "tags": "vegan hummus vegetables wrap fiber-rich",
+    "calories": 460,
+    "ingredients": ["wholegrain wrap", "hummus", "cucumbers", "carrots", "spinach"]
+  },
+  {
+    "name": "Protein Banana Muffins",
+    "category": "breakfast",
+    "tags": "high-protein banana oats breakfast portable",
+    "calories": 320,
+    "ingredients": ["banana", "protein powder", "eggs", "oats", "almond butter"]
+  },
+  {
+    "name": "Thai Basil Chicken",
+    "category": "dinner",
+    "tags": "chicken asian high-protein spicy thai",
+    "calories": 590,
+    "ingredients": ["chicken breast", "thai basil", "soy sauce", "garlic", "chili"]
+  },
+  {
+    "name": "Falafel Bowl with Tahini",
+    "category": "lunch",
+    "tags": "vegetarian falafel tahini chickpeas salad middle-eastern",
+    "calories": 540,
+    "ingredients": ["falafel", "lettuce", "tomatoes", "cucumber", "tahini"]
+  },
+  {
+    "name": "Egg White Veggie Omelette",
+    "category": "breakfast",
+    "tags": "low-fat low-carb eggs vegetables breakfast",
+    "calories": 270,
+    "ingredients": ["egg whites", "bell peppers", "spinach", "onions", "tomatoes"]
+  },
+  {
+    "name": "Coconut Chia Pudding",
+    "category": "breakfast",
+    "tags": "chia seeds coconut milk maple syrup vegan gluten-free dairy-free",
+    "calories": 320,
+    "ingredients": ["chia seeds", "coconut milk", "maple syrup", "vanilla extract", "fresh berries"]
+  },
+  {
+    "name": "Spicy Tofu Stir-Fry",
+    "category": "lunch",
+    "tags": "tofu bell peppers broccoli soy sauce vegan high-protein dairy-free",
+    "calories": 450,
+    "ingredients": ["tofu", "bell peppers", "broccoli", "soy sauce", "garlic", "ginger"]
+  },
+  {
+    "name": "Grilled Chicken Caesar Salad",
+    "category": "dinner",
+    "tags": "chicken breast romaine lettuce parmesan cheese croutons high-protein",
+    "calories": 550,
+    "ingredients": ["chicken breast", "romaine lettuce", "parmesan cheese", "croutons", "caesar dressing"]
+  },
+  {
+    "name": "Mushroom and Spinach Quesadilla",
+    "category": "lunch",
+    "tags": "mushrooms spinach cheese whole wheat tortilla vegetarian",
+    "calories": 480,
+    "ingredients": ["mushrooms", "spinach", "cheddar cheese", "whole wheat tortilla", "olive oil"]
+  },
+  {
+    "name": "Berry Smoothie Bowl",
+    "category": "breakfast",
+    "tags": "mixed berries banana almond milk granola vegan gluten-free dairy-free",
+    "calories": 370,
+    "ingredients": ["mixed berries", "banana", "almond milk", "granola", "chia seeds"]
+  },
+  {
+    "name": "Shrimp and Avocado Salad",
+    "category": "lunch",
+    "tags": "shrimp avocado mixed greens citrus dressing high-protein gluten-free dairy-free",
+    "calories": 520,
+    "ingredients": ["shrimp", "avocado", "mixed greens", "orange segments", "citrus vinaigrette"]
+  },
+  {
+    "name": "Lentil and Sweet Potato Curry",
+    "category": "dinner",
+    "tags": "lentils sweet potatoes coconut milk curry spices vegan gluten-free dairy-free",
+    "calories": 500,
+    "ingredients": ["lentils", "sweet potatoes", "coconut milk", "curry powder", "onions", "garlic"]
+  },
+  {
+    "name": "Egg and Veggie Muffins",
+    "category": "breakfast",
+    "tags": "eggs bell peppers spinach onions high-protein gluten-free",
     "calories": 300,
-    "ingredients": [
-      "ingredient31",
-      "spice3"
-    ]
+    "ingredients": ["eggs", "bell peppers", "spinach", "onions", "cheddar cheese"]
   },
   {
-    "name": "Custom Meal 33",
+    "name": "Turkey and Hummus Wrap",
+    "category": "lunch",
+    "tags": "turkey breast hummus whole wheat wrap lettuce tomato high-protein",
+    "calories": 460,
+    "ingredients": ["turkey breast", "hummus", "whole wheat wrap", "lettuce", "tomato"]
+  },
+  {
+    "name": "Baked Salmon with Dill",
     "category": "dinner",
-    "tags": "custom-tag2 high-protein ingredient32 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient32",
-      "spice0"
-    ]
+    "tags": "salmon dill lemon garlic high-protein gluten-free dairy-free",
+    "calories": 580,
+    "ingredients": ["salmon fillet", "dill", "lemon juice", "garlic", "olive oil"]
   },
   {
-    "name": "Custom Meal 34",
+    "name": "Peanut Butter Overnight Oats",
     "category": "breakfast",
-    "tags": "custom-tag3 contains-dairy ingredient33",
+    "tags": "oats peanut butter almond milk honey vegetarian dairy-free",
+    "calories": 390,
+    "ingredients": ["rolled oats", "peanut butter", "almond milk", "honey", "chia seeds"]
+  },
+  {
+    "name": "Quinoa and Roasted Veggie Bowl",
+    "category": "lunch",
+    "tags": "quinoa zucchini bell peppers eggplant vegan gluten-free dairy-free",
+    "calories": 470,
+    "ingredients": ["quinoa", "zucchini", "bell peppers", "eggplant", "olive oil", "balsamic vinegar"]
+  },
+  {
+    "name": "Beef and Broccoli Stir-Fry",
+    "category": "dinner",
+    "tags": "beef broccoli soy sauce garlic high-protein dairy-free",
+    "calories": 580,
+    "ingredients": ["beef strips", "broccoli", "soy sauce", "garlic", "sesame oil"]
+  },
+  {
+    "name": "Avocado and Egg Toast",
+    "category": "breakfast",
+    "tags": "avocado eggs whole grain bread high-protein vegetarian",
     "calories": 400,
-    "ingredients": [
-      "ingredient33",
-      "spice1"
-    ]
+    "ingredients": ["avocado", "eggs", "whole grain bread", "lemon juice", "red pepper flakes"]
   },
   {
-    "name": "Custom Meal 35",
+    "name": "Chickpea and Spinach Stew",
     "category": "lunch",
-    "tags": "custom-tag4 high-protein ingredient34 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient34",
-      "spice2"
-    ]
+    "tags": "chickpeas spinach tomatoes garlic vegan gluten-free high-fiber dairy-free",
+    "calories": 460,
+    "ingredients": ["chickpeas", "spinach", "tomatoes", "garlic", "onion"]
   },
   {
-    "name": "Custom Meal 36",
+    "name": "Grilled Chicken with Quinoa Salad",
     "category": "dinner",
-    "tags": "custom-tag0 contains-dairy ingredient35",
-    "calories": 500,
-    "ingredients": [
-      "ingredient35",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 37",
-    "category": "breakfast",
-    "tags": "custom-tag1 high-protein ingredient36 vegan",
+    "tags": "chicken breast quinoa cucumber tomato high-protein gluten-free dairy-free",
     "calories": 550,
-    "ingredients": [
-      "ingredient36",
-      "spice0"
-    ]
+    "ingredients": ["chicken breast", "quinoa", "cucumber", "tomato", "lemon juice", "olive oil"]
   },
   {
-    "name": "Custom Meal 38",
-    "category": "lunch",
-    "tags": "custom-tag2 contains-dairy ingredient37",
-    "calories": 600,
-    "ingredients": [
-      "ingredient37",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 39",
-    "category": "dinner",
-    "tags": "custom-tag3 high-protein ingredient38 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient38",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 40",
+    "name": "Fruit and Yogurt Parfait",
     "category": "breakfast",
-    "tags": "custom-tag4 contains-dairy ingredient39",
-    "calories": 700,
-    "ingredients": [
-      "ingredient39",
-      "spice3"
-    ]
+    "tags": "greek yogurt mixed berries granola honey high-protein vegetarian dairy",
+    "calories": 360,
+    "ingredients": ["greek yogurt", "mixed berries", "granola", "honey"]
   },
   {
-    "name": "Custom Meal 41",
+    "name": "Tuna Salad Lettuce Wraps",
     "category": "lunch",
-    "tags": "custom-tag0 high-protein ingredient40 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient40",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 42",
-    "category": "dinner",
-    "tags": "custom-tag1 contains-dairy ingredient41",
-    "calories": 300,
-    "ingredients": [
-      "ingredient41",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 43",
-    "category": "breakfast",
-    "tags": "custom-tag2 high-protein ingredient42 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient42",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 44",
-    "category": "lunch",
-    "tags": "custom-tag3 contains-dairy ingredient43",
-    "calories": 400,
-    "ingredients": [
-      "ingredient43",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 45",
-    "category": "dinner",
-    "tags": "custom-tag4 high-protein ingredient44 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient44",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 46",
-    "category": "breakfast",
-    "tags": "custom-tag0 contains-dairy ingredient45",
-    "calories": 500,
-    "ingredients": [
-      "ingredient45",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 47",
-    "category": "lunch",
-    "tags": "custom-tag1 high-protein ingredient46 vegan",
-    "calories": 550,
-    "ingredients": [
-      "ingredient46",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 48",
-    "category": "dinner",
-    "tags": "custom-tag2 contains-dairy ingredient47",
-    "calories": 600,
-    "ingredients": [
-      "ingredient47",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 49",
-    "category": "breakfast",
-    "tags": "custom-tag3 high-protein ingredient48 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient48",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 50",
-    "category": "lunch",
-    "tags": "custom-tag4 contains-dairy ingredient49",
-    "calories": 700,
-    "ingredients": [
-      "ingredient49",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 51",
-    "category": "dinner",
-    "tags": "custom-tag0 high-protein ingredient50 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient50",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 52",
-    "category": "breakfast",
-    "tags": "custom-tag1 contains-dairy ingredient51",
-    "calories": 300,
-    "ingredients": [
-      "ingredient51",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 53",
-    "category": "lunch",
-    "tags": "custom-tag2 high-protein ingredient52 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient52",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 54",
-    "category": "dinner",
-    "tags": "custom-tag3 contains-dairy ingredient53",
-    "calories": 400,
-    "ingredients": [
-      "ingredient53",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 55",
-    "category": "breakfast",
-    "tags": "custom-tag4 high-protein ingredient54 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient54",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 56",
-    "category": "lunch",
-    "tags": "custom-tag0 contains-dairy ingredient55",
-    "calories": 500,
-    "ingredients": [
-      "ingredient55",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 57",
-    "category": "dinner",
-    "tags": "custom-tag1 high-protein ingredient56 vegan",
-    "calories": 550,
-    "ingredients": [
-      "ingredient56",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 58",
-    "category": "breakfast",
-    "tags": "custom-tag2 contains-dairy ingredient57",
-    "calories": 600,
-    "ingredients": [
-      "ingredient57",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 59",
-    "category": "lunch",
-    "tags": "custom-tag3 high-protein ingredient58 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient58",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 60",
-    "category": "dinner",
-    "tags": "custom-tag4 contains-dairy ingredient59",
-    "calories": 700,
-    "ingredients": [
-      "ingredient59",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 61",
-    "category": "breakfast",
-    "tags": "custom-tag0 high-protein ingredient60 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient60",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 62",
-    "category": "lunch",
-    "tags": "custom-tag1 contains-dairy ingredient61",
-    "calories": 300,
-    "ingredients": [
-      "ingredient61",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 63",
-    "category": "dinner",
-    "tags": "custom-tag2 high-protein ingredient62 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient62",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 64",
-    "category": "breakfast",
-    "tags": "custom-tag3 contains-dairy ingredient63",
-    "calories": 400,
-    "ingredients": [
-      "ingredient63",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 65",
-    "category": "lunch",
-    "tags": "custom-tag4 high-protein ingredient64 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient64",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 66",
-    "category": "dinner",
-    "tags": "custom-tag0 contains-dairy ingredient65",
-    "calories": 500,
-    "ingredients": [
-      "ingredient65",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 67",
-    "category": "breakfast",
-    "tags": "custom-tag1 high-protein ingredient66 vegan",
-    "calories": 550,
-    "ingredients": [
-      "ingredient66",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 68",
-    "category": "lunch",
-    "tags": "custom-tag2 contains-dairy ingredient67",
-    "calories": 600,
-    "ingredients": [
-      "ingredient67",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 69",
-    "category": "dinner",
-    "tags": "custom-tag3 high-protein ingredient68 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient68",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 70",
-    "category": "breakfast",
-    "tags": "custom-tag4 contains-dairy ingredient69",
-    "calories": 700,
-    "ingredients": [
-      "ingredient69",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 71",
-    "category": "lunch",
-    "tags": "custom-tag0 high-protein ingredient70 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient70",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 72",
-    "category": "dinner",
-    "tags": "custom-tag1 contains-dairy ingredient71",
-    "calories": 300,
-    "ingredients": [
-      "ingredient71",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 73",
-    "category": "breakfast",
-    "tags": "custom-tag2 high-protein ingredient72 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient72",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 74",
-    "category": "lunch",
-    "tags": "custom-tag3 contains-dairy ingredient73",
-    "calories": 400,
-    "ingredients": [
-      "ingredient73",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 75",
-    "category": "dinner",
-    "tags": "custom-tag4 high-protein ingredient74 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient74",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 76",
-    "category": "breakfast",
-    "tags": "custom-tag0 contains-dairy ingredient75",
-    "calories": 500,
-    "ingredients": [
-      "ingredient75",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 77",
-    "category": "lunch",
-    "tags": "custom-tag1 high-protein ingredient76 vegan",
-    "calories": 550,
-    "ingredients": [
-      "ingredient76",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 78",
-    "category": "dinner",
-    "tags": "custom-tag2 contains-dairy ingredient77",
-    "calories": 600,
-    "ingredients": [
-      "ingredient77",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 79",
-    "category": "breakfast",
-    "tags": "custom-tag3 high-protein ingredient78 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient78",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 80",
-    "category": "lunch",
-    "tags": "custom-tag4 contains-dairy ingredient79",
-    "calories": 700,
-    "ingredients": [
-      "ingredient79",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 81",
-    "category": "dinner",
-    "tags": "custom-tag0 high-protein ingredient80 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient80",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 82",
-    "category": "breakfast",
-    "tags": "custom-tag1 contains-dairy ingredient81",
-    "calories": 300,
-    "ingredients": [
-      "ingredient81",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 83",
-    "category": "lunch",
-    "tags": "custom-tag2 high-protein ingredient82 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient82",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 84",
-    "category": "dinner",
-    "tags": "custom-tag3 contains-dairy ingredient83",
-    "calories": 400,
-    "ingredients": [
-      "ingredient83",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 85",
-    "category": "breakfast",
-    "tags": "custom-tag4 high-protein ingredient84 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient84",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 86",
-    "category": "lunch",
-    "tags": "custom-tag0 contains-dairy ingredient85",
-    "calories": 500,
-    "ingredients": [
-      "ingredient85",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 87",
-    "category": "dinner",
-    "tags": "custom-tag1 high-protein ingredient86 vegan",
-    "calories": 550,
-    "ingredients": [
-      "ingredient86",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 88",
-    "category": "breakfast",
-    "tags": "custom-tag2 contains-dairy ingredient87",
-    "calories": 600,
-    "ingredients": [
-      "ingredient87",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 89",
-    "category": "lunch",
-    "tags": "custom-tag3 high-protein ingredient88 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient88",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 90",
-    "category": "dinner",
-    "tags": "custom-tag4 contains-dairy ingredient89",
-    "calories": 700,
-    "ingredients": [
-      "ingredient89",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 91",
-    "category": "breakfast",
-    "tags": "custom-tag0 high-protein ingredient90 vegan",
-    "calories": 250,
-    "ingredients": [
-      "ingredient90",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 92",
-    "category": "lunch",
-    "tags": "custom-tag1 contains-dairy ingredient91",
-    "calories": 300,
-    "ingredients": [
-      "ingredient91",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 93",
-    "category": "dinner",
-    "tags": "custom-tag2 high-protein ingredient92 vegan",
-    "calories": 350,
-    "ingredients": [
-      "ingredient92",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 94",
-    "category": "breakfast",
-    "tags": "custom-tag3 contains-dairy ingredient93",
-    "calories": 400,
-    "ingredients": [
-      "ingredient93",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 95",
-    "category": "lunch",
-    "tags": "custom-tag4 high-protein ingredient94 vegan",
-    "calories": 450,
-    "ingredients": [
-      "ingredient94",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 96",
-    "category": "dinner",
-    "tags": "custom-tag0 contains-dairy ingredient95",
-    "calories": 500,
-    "ingredients": [
-      "ingredient95",
-      "spice3"
-    ]
-  },
-  {
-    "name": "Custom Meal 97",
-    "category": "breakfast",
-    "tags": "custom-tag1 high-protein ingredient96 vegan",
-    "calories": 550,
-    "ingredients": [
-      "ingredient96",
-      "spice0"
-    ]
-  },
-  {
-    "name": "Custom Meal 98",
-    "category": "lunch",
-    "tags": "custom-tag2 contains-dairy ingredient97",
-    "calories": 600,
-    "ingredients": [
-      "ingredient97",
-      "spice1"
-    ]
-  },
-  {
-    "name": "Custom Meal 99",
-    "category": "dinner",
-    "tags": "custom-tag3 high-protein ingredient98 vegan",
-    "calories": 650,
-    "ingredients": [
-      "ingredient98",
-      "spice2"
-    ]
-  },
-  {
-    "name": "Custom Meal 100",
-    "category": "breakfast",
-    "tags": "custom-tag4 contains-dairy ingredient99",
-    "calories": 700,
-    "ingredients": [
-      "ingredient99",
-      "spice3"
-    ]
+    "tags": "tuna lettuce celery mayonnaise high-protein gluten-free dairy-free",
+    "calories": 420,
+    "ingredients": ["canned tuna", "lettuce leaves", "celery", "mayonnaise", "lemon juice"]
   }
 ]
