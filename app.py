@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import requests
+import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -62,14 +63,8 @@ def recommend_products():
 
 # -------------------- Meal Plan Recommendation --------------------
 
-meals = [
-    {"name": "Oatmeal with Fruits", "category": "breakfast", "tags": "vegan dairy-free high-fiber", "calories": 300, "ingredients": ["oats", "banana", "almond milk"]},
-    {"name": "Scrambled Eggs", "category": "breakfast", "tags": "high-protein dairy", "calories": 400, "ingredients": ["eggs", "butter"]},
-    {"name": "Grilled Chicken Salad", "category": "lunch", "tags": "high-protein gluten-free", "calories": 450, "ingredients": ["chicken breast", "lettuce", "tomatoes", "olive oil"]},
-    {"name": "Vegetable Stir-Fry", "category": "dinner", "tags": "vegan soy-based dairy-free", "calories": 400, "ingredients": ["tofu", "bell peppers", "soy sauce"]},
-    {"name": "Pasta Primavera", "category": "lunch", "tags": "vegetarian dairy-free", "calories": 600, "ingredients": ["pasta", "tomatoes", "olive oil", "broccoli"]},
-    {"name": "Steak with Quinoa", "category": "dinner", "tags": "high-protein gluten-free", "calories": 700, "ingredients": ["beef steak", "quinoa", "asparagus"]},
-]
+with open("meal_dataset.json", "r") as file:
+    meals = json.load(file)
 
 def contains_meal_negative(tags, negative_list):
     for negative in negative_list:

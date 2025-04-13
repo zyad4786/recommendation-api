@@ -1,0 +1,1009 @@
+[
+  {
+    "name": "Oatmeal with Fruits",
+    "category": "breakfast",
+    "tags": "vegan dairy-free high-fiber oats banana almond-milk",
+    "calories": 300,
+    "ingredients": [
+      "oats",
+      "banana",
+      "almond milk"
+    ]
+  },
+  {
+    "name": "Scrambled Eggs",
+    "category": "breakfast",
+    "tags": "high-protein dairy eggs butter",
+    "calories": 400,
+    "ingredients": [
+      "eggs",
+      "butter"
+    ]
+  },
+  {
+    "name": "Grilled Chicken Salad",
+    "category": "lunch",
+    "tags": "high-protein gluten-free chicken lettuce tomatoes olive-oil",
+    "calories": 450,
+    "ingredients": [
+      "chicken breast",
+      "lettuce",
+      "tomatoes",
+      "olive oil"
+    ]
+  },
+  {
+    "name": "Vegetable Stir-Fry",
+    "category": "dinner",
+    "tags": "vegan soy-based dairy-free tofu bell-peppers soy-sauce",
+    "calories": 400,
+    "ingredients": [
+      "tofu",
+      "bell peppers",
+      "soy sauce"
+    ]
+  },
+  {
+    "name": "Steak with Quinoa",
+    "category": "dinner",
+    "tags": "high-protein gluten-free beef-steak quinoa asparagus",
+    "calories": 700,
+    "ingredients": [
+      "beef steak",
+      "quinoa",
+      "asparagus"
+    ]
+  },
+  {
+    "name": "Cheese Omelette",
+    "category": "breakfast",
+    "tags": "high-protein dairy eggs cheese",
+    "calories": 350,
+    "ingredients": [
+      "eggs",
+      "cheese"
+    ]
+  },
+  {
+    "name": "Tuna Sandwich",
+    "category": "lunch",
+    "tags": "high-protein contains-gluten tuna mayo whole-grain-bread",
+    "calories": 500,
+    "ingredients": [
+      "tuna",
+      "mayonnaise",
+      "whole grain bread"
+    ]
+  },
+  {
+    "name": "Lentil Soup",
+    "category": "dinner",
+    "tags": "vegan high-fiber gluten-free lentils carrots celery",
+    "calories": 320,
+    "ingredients": [
+      "lentils",
+      "carrots",
+      "celery"
+    ]
+  },
+  {
+    "name": "Custom Meal 9",
+    "category": "dinner",
+    "tags": "custom-tag3 high-protein ingredient8 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient8",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 10",
+    "category": "breakfast",
+    "tags": "custom-tag4 contains-dairy ingredient9",
+    "calories": 700,
+    "ingredients": [
+      "ingredient9",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 11",
+    "category": "lunch",
+    "tags": "custom-tag0 high-protein ingredient10 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient10",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 12",
+    "category": "dinner",
+    "tags": "custom-tag1 contains-dairy ingredient11",
+    "calories": 300,
+    "ingredients": [
+      "ingredient11",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 13",
+    "category": "breakfast",
+    "tags": "custom-tag2 high-protein ingredient12 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient12",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 14",
+    "category": "lunch",
+    "tags": "custom-tag3 contains-dairy ingredient13",
+    "calories": 400,
+    "ingredients": [
+      "ingredient13",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 15",
+    "category": "dinner",
+    "tags": "custom-tag4 high-protein ingredient14 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient14",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 16",
+    "category": "breakfast",
+    "tags": "custom-tag0 contains-dairy ingredient15",
+    "calories": 500,
+    "ingredients": [
+      "ingredient15",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 17",
+    "category": "lunch",
+    "tags": "custom-tag1 high-protein ingredient16 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient16",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 18",
+    "category": "dinner",
+    "tags": "custom-tag2 contains-dairy ingredient17",
+    "calories": 600,
+    "ingredients": [
+      "ingredient17",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 19",
+    "category": "breakfast",
+    "tags": "custom-tag3 high-protein ingredient18 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient18",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 20",
+    "category": "lunch",
+    "tags": "custom-tag4 contains-dairy ingredient19",
+    "calories": 700,
+    "ingredients": [
+      "ingredient19",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 21",
+    "category": "dinner",
+    "tags": "custom-tag0 high-protein ingredient20 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient20",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 22",
+    "category": "breakfast",
+    "tags": "custom-tag1 contains-dairy ingredient21",
+    "calories": 300,
+    "ingredients": [
+      "ingredient21",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 23",
+    "category": "lunch",
+    "tags": "custom-tag2 high-protein ingredient22 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient22",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 24",
+    "category": "dinner",
+    "tags": "custom-tag3 contains-dairy ingredient23",
+    "calories": 400,
+    "ingredients": [
+      "ingredient23",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 25",
+    "category": "breakfast",
+    "tags": "custom-tag4 high-protein ingredient24 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient24",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 26",
+    "category": "lunch",
+    "tags": "custom-tag0 contains-dairy ingredient25",
+    "calories": 500,
+    "ingredients": [
+      "ingredient25",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 27",
+    "category": "dinner",
+    "tags": "custom-tag1 high-protein ingredient26 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient26",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 28",
+    "category": "breakfast",
+    "tags": "custom-tag2 contains-dairy ingredient27",
+    "calories": 600,
+    "ingredients": [
+      "ingredient27",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 29",
+    "category": "lunch",
+    "tags": "custom-tag3 high-protein ingredient28 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient28",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 30",
+    "category": "dinner",
+    "tags": "custom-tag4 contains-dairy ingredient29",
+    "calories": 700,
+    "ingredients": [
+      "ingredient29",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 31",
+    "category": "breakfast",
+    "tags": "custom-tag0 high-protein ingredient30 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient30",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 32",
+    "category": "lunch",
+    "tags": "custom-tag1 contains-dairy ingredient31",
+    "calories": 300,
+    "ingredients": [
+      "ingredient31",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 33",
+    "category": "dinner",
+    "tags": "custom-tag2 high-protein ingredient32 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient32",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 34",
+    "category": "breakfast",
+    "tags": "custom-tag3 contains-dairy ingredient33",
+    "calories": 400,
+    "ingredients": [
+      "ingredient33",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 35",
+    "category": "lunch",
+    "tags": "custom-tag4 high-protein ingredient34 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient34",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 36",
+    "category": "dinner",
+    "tags": "custom-tag0 contains-dairy ingredient35",
+    "calories": 500,
+    "ingredients": [
+      "ingredient35",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 37",
+    "category": "breakfast",
+    "tags": "custom-tag1 high-protein ingredient36 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient36",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 38",
+    "category": "lunch",
+    "tags": "custom-tag2 contains-dairy ingredient37",
+    "calories": 600,
+    "ingredients": [
+      "ingredient37",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 39",
+    "category": "dinner",
+    "tags": "custom-tag3 high-protein ingredient38 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient38",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 40",
+    "category": "breakfast",
+    "tags": "custom-tag4 contains-dairy ingredient39",
+    "calories": 700,
+    "ingredients": [
+      "ingredient39",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 41",
+    "category": "lunch",
+    "tags": "custom-tag0 high-protein ingredient40 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient40",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 42",
+    "category": "dinner",
+    "tags": "custom-tag1 contains-dairy ingredient41",
+    "calories": 300,
+    "ingredients": [
+      "ingredient41",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 43",
+    "category": "breakfast",
+    "tags": "custom-tag2 high-protein ingredient42 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient42",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 44",
+    "category": "lunch",
+    "tags": "custom-tag3 contains-dairy ingredient43",
+    "calories": 400,
+    "ingredients": [
+      "ingredient43",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 45",
+    "category": "dinner",
+    "tags": "custom-tag4 high-protein ingredient44 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient44",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 46",
+    "category": "breakfast",
+    "tags": "custom-tag0 contains-dairy ingredient45",
+    "calories": 500,
+    "ingredients": [
+      "ingredient45",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 47",
+    "category": "lunch",
+    "tags": "custom-tag1 high-protein ingredient46 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient46",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 48",
+    "category": "dinner",
+    "tags": "custom-tag2 contains-dairy ingredient47",
+    "calories": 600,
+    "ingredients": [
+      "ingredient47",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 49",
+    "category": "breakfast",
+    "tags": "custom-tag3 high-protein ingredient48 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient48",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 50",
+    "category": "lunch",
+    "tags": "custom-tag4 contains-dairy ingredient49",
+    "calories": 700,
+    "ingredients": [
+      "ingredient49",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 51",
+    "category": "dinner",
+    "tags": "custom-tag0 high-protein ingredient50 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient50",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 52",
+    "category": "breakfast",
+    "tags": "custom-tag1 contains-dairy ingredient51",
+    "calories": 300,
+    "ingredients": [
+      "ingredient51",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 53",
+    "category": "lunch",
+    "tags": "custom-tag2 high-protein ingredient52 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient52",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 54",
+    "category": "dinner",
+    "tags": "custom-tag3 contains-dairy ingredient53",
+    "calories": 400,
+    "ingredients": [
+      "ingredient53",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 55",
+    "category": "breakfast",
+    "tags": "custom-tag4 high-protein ingredient54 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient54",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 56",
+    "category": "lunch",
+    "tags": "custom-tag0 contains-dairy ingredient55",
+    "calories": 500,
+    "ingredients": [
+      "ingredient55",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 57",
+    "category": "dinner",
+    "tags": "custom-tag1 high-protein ingredient56 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient56",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 58",
+    "category": "breakfast",
+    "tags": "custom-tag2 contains-dairy ingredient57",
+    "calories": 600,
+    "ingredients": [
+      "ingredient57",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 59",
+    "category": "lunch",
+    "tags": "custom-tag3 high-protein ingredient58 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient58",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 60",
+    "category": "dinner",
+    "tags": "custom-tag4 contains-dairy ingredient59",
+    "calories": 700,
+    "ingredients": [
+      "ingredient59",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 61",
+    "category": "breakfast",
+    "tags": "custom-tag0 high-protein ingredient60 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient60",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 62",
+    "category": "lunch",
+    "tags": "custom-tag1 contains-dairy ingredient61",
+    "calories": 300,
+    "ingredients": [
+      "ingredient61",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 63",
+    "category": "dinner",
+    "tags": "custom-tag2 high-protein ingredient62 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient62",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 64",
+    "category": "breakfast",
+    "tags": "custom-tag3 contains-dairy ingredient63",
+    "calories": 400,
+    "ingredients": [
+      "ingredient63",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 65",
+    "category": "lunch",
+    "tags": "custom-tag4 high-protein ingredient64 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient64",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 66",
+    "category": "dinner",
+    "tags": "custom-tag0 contains-dairy ingredient65",
+    "calories": 500,
+    "ingredients": [
+      "ingredient65",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 67",
+    "category": "breakfast",
+    "tags": "custom-tag1 high-protein ingredient66 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient66",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 68",
+    "category": "lunch",
+    "tags": "custom-tag2 contains-dairy ingredient67",
+    "calories": 600,
+    "ingredients": [
+      "ingredient67",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 69",
+    "category": "dinner",
+    "tags": "custom-tag3 high-protein ingredient68 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient68",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 70",
+    "category": "breakfast",
+    "tags": "custom-tag4 contains-dairy ingredient69",
+    "calories": 700,
+    "ingredients": [
+      "ingredient69",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 71",
+    "category": "lunch",
+    "tags": "custom-tag0 high-protein ingredient70 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient70",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 72",
+    "category": "dinner",
+    "tags": "custom-tag1 contains-dairy ingredient71",
+    "calories": 300,
+    "ingredients": [
+      "ingredient71",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 73",
+    "category": "breakfast",
+    "tags": "custom-tag2 high-protein ingredient72 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient72",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 74",
+    "category": "lunch",
+    "tags": "custom-tag3 contains-dairy ingredient73",
+    "calories": 400,
+    "ingredients": [
+      "ingredient73",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 75",
+    "category": "dinner",
+    "tags": "custom-tag4 high-protein ingredient74 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient74",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 76",
+    "category": "breakfast",
+    "tags": "custom-tag0 contains-dairy ingredient75",
+    "calories": 500,
+    "ingredients": [
+      "ingredient75",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 77",
+    "category": "lunch",
+    "tags": "custom-tag1 high-protein ingredient76 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient76",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 78",
+    "category": "dinner",
+    "tags": "custom-tag2 contains-dairy ingredient77",
+    "calories": 600,
+    "ingredients": [
+      "ingredient77",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 79",
+    "category": "breakfast",
+    "tags": "custom-tag3 high-protein ingredient78 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient78",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 80",
+    "category": "lunch",
+    "tags": "custom-tag4 contains-dairy ingredient79",
+    "calories": 700,
+    "ingredients": [
+      "ingredient79",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 81",
+    "category": "dinner",
+    "tags": "custom-tag0 high-protein ingredient80 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient80",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 82",
+    "category": "breakfast",
+    "tags": "custom-tag1 contains-dairy ingredient81",
+    "calories": 300,
+    "ingredients": [
+      "ingredient81",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 83",
+    "category": "lunch",
+    "tags": "custom-tag2 high-protein ingredient82 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient82",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 84",
+    "category": "dinner",
+    "tags": "custom-tag3 contains-dairy ingredient83",
+    "calories": 400,
+    "ingredients": [
+      "ingredient83",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 85",
+    "category": "breakfast",
+    "tags": "custom-tag4 high-protein ingredient84 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient84",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 86",
+    "category": "lunch",
+    "tags": "custom-tag0 contains-dairy ingredient85",
+    "calories": 500,
+    "ingredients": [
+      "ingredient85",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 87",
+    "category": "dinner",
+    "tags": "custom-tag1 high-protein ingredient86 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient86",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 88",
+    "category": "breakfast",
+    "tags": "custom-tag2 contains-dairy ingredient87",
+    "calories": 600,
+    "ingredients": [
+      "ingredient87",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 89",
+    "category": "lunch",
+    "tags": "custom-tag3 high-protein ingredient88 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient88",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 90",
+    "category": "dinner",
+    "tags": "custom-tag4 contains-dairy ingredient89",
+    "calories": 700,
+    "ingredients": [
+      "ingredient89",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 91",
+    "category": "breakfast",
+    "tags": "custom-tag0 high-protein ingredient90 vegan",
+    "calories": 250,
+    "ingredients": [
+      "ingredient90",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 92",
+    "category": "lunch",
+    "tags": "custom-tag1 contains-dairy ingredient91",
+    "calories": 300,
+    "ingredients": [
+      "ingredient91",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 93",
+    "category": "dinner",
+    "tags": "custom-tag2 high-protein ingredient92 vegan",
+    "calories": 350,
+    "ingredients": [
+      "ingredient92",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 94",
+    "category": "breakfast",
+    "tags": "custom-tag3 contains-dairy ingredient93",
+    "calories": 400,
+    "ingredients": [
+      "ingredient93",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 95",
+    "category": "lunch",
+    "tags": "custom-tag4 high-protein ingredient94 vegan",
+    "calories": 450,
+    "ingredients": [
+      "ingredient94",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 96",
+    "category": "dinner",
+    "tags": "custom-tag0 contains-dairy ingredient95",
+    "calories": 500,
+    "ingredients": [
+      "ingredient95",
+      "spice3"
+    ]
+  },
+  {
+    "name": "Custom Meal 97",
+    "category": "breakfast",
+    "tags": "custom-tag1 high-protein ingredient96 vegan",
+    "calories": 550,
+    "ingredients": [
+      "ingredient96",
+      "spice0"
+    ]
+  },
+  {
+    "name": "Custom Meal 98",
+    "category": "lunch",
+    "tags": "custom-tag2 contains-dairy ingredient97",
+    "calories": 600,
+    "ingredients": [
+      "ingredient97",
+      "spice1"
+    ]
+  },
+  {
+    "name": "Custom Meal 99",
+    "category": "dinner",
+    "tags": "custom-tag3 high-protein ingredient98 vegan",
+    "calories": 650,
+    "ingredients": [
+      "ingredient98",
+      "spice2"
+    ]
+  },
+  {
+    "name": "Custom Meal 100",
+    "category": "breakfast",
+    "tags": "custom-tag4 contains-dairy ingredient99",
+    "calories": 700,
+    "ingredients": [
+      "ingredient99",
+      "spice3"
+    ]
+  }
+]
