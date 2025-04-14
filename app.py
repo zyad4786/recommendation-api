@@ -22,8 +22,16 @@ def fetch_product_data():
             extracted_data.append({
                 "product_id": product.get("code", "Unknown"),
                 "name": product.get("product_name", "Unknown"),
-                "image": product.get("image_front_url", ""),  # Image support
-                "tags": product.get("labels", "") + " " + product.get("categories", "") + " " + product.get("allergens", "")
+                "image": product.get("image_front_url", ""),
+                "category": product.get("categories", "Unknown"),  # ✅ category added here
+                "tags": product.get("labels", "") + " " + product.get("categories", "") + " " + product.get("allergens", ""),
+                "ingredients": product.get("ingredients_text", "Unknown"),
+                "nutritional_info": {
+                    "calories": product.get("nutriments", {}).get("energy-kcal", "Unknown"),
+                    "fat": product.get("nutriments", {}).get("fat", "Unknown"),
+                    "protein": product.get("nutriments", {}).get("proteins", "Unknown"),
+                    "carbohydrates": product.get("nutriments", {}).get("carbohydrates", "Unknown"),
+                }
             })
         return extracted_data
     else:
@@ -59,7 +67,15 @@ def recommend_products():
 
     filtered_df = df[~df["tags"].apply(lambda x: contains_negative(x, user_negative_preferences))]
     recommended = filtered_df.sort_values(by="similarity_score", ascending=False).head(10)
-    return jsonify(recommended[["product_id", "name", "image", "similarity_score"]].to_dict(orient="records"))
+    return jsonify(recommended[[
+    "product_id",
+    "name",
+    "image",
+    "category",  
+    "similarity_score",
+    "ingredients",
+    "nutritional_info"
+]].to_dict(orient="records"))
 
 # -------------------- Meal Plan Recommendation --------------------
 
