@@ -39,7 +39,7 @@ def preprocess_products(product_data):
 @app.route("/recommend_products", methods=["POST"])
 def recommend_products():
     data = request.get_json()
-    user_positive_preferences = data.get("positive_preferences", "")
+    user_positive_preferences = " ".join(data.get("positive_preferences", []))
     user_negative_preferences = [x.lower() for x in data.get("negative_preferences", [])]
 
     products = fetch_product_data()
@@ -77,7 +77,7 @@ def contains_meal_negative(tags, negative_list):
 @app.route("/mealplan", methods=["POST"])
 def generate_meal_plan():
     data = request.get_json()
-    user_positive_preferences = data.get("positive_preferences", "")
+    user_positive_preferences = " ".join(data.get("positive_preferences", []))
     user_negative_preferences = [x.lower() for x in data.get("negative_preferences", [])]
     calorie_limit = data.get("calorie_limit", 2000)
 
