@@ -3,10 +3,12 @@ from flask import Flask, request, jsonify
 import pandas as pd
 import requests
 import json
+from flask_cors import CORS
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
+CORS(app)
 
 # -------------------- Product Recommendation --------------------
 
