@@ -47,8 +47,8 @@ def recommend_products():
     data = request.get_json()
     user_positive_preferences = " ".join(data.get("positive_preferences", []))
     user_negative_preferences = [x.lower() for x in data.get("negative_preferences", [])]
+    category_filter = data.get("category_filter", "").lower()
 
-    # Pagination parameters
     page = int(data.get("page", 1))
     page_size = int(data.get("page_size", 10))
     start = (page - 1) * page_size
@@ -72,9 +72,22 @@ def recommend_products():
         return False
 
     filtered_df = df[~df["tags"].apply(lambda x: contains_negative(x, user_negative_preferences))]
+
+    if category_filter:
+        filtered_df = filtered_df[filtered_df["category"].str.lower() == category_filter]
+
     recommended = filtered_df.sort_values(by="similarity_score", ascending=False).iloc[start:end]
 
     return jsonify(recommended.to_dict(orient="records"))
+
+@app.route("/available_categories", methods=["GET"])
+def get_available_categories():
+    products = fetch_product_data()
+    categories = list(set([
+        p.get("category", "unknown").lower()
+        for p in products if p.get("category")
+    ]))
+    return jsonify(sorted(categories))
 
 # -------------------- Meal Plan Recommendation --------------------
 
