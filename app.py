@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify
 import pandas as pd
 import requests
@@ -13,7 +12,7 @@ CORS(app)
 # -------------------- Product Recommendation --------------------
 
 def fetch_product_data():
-    url = "https://world.openfoodfacts.org/api/v2/search?country=saudi-arabia&page_size=100"
+    url = "https://world.openfoodfacts.org/api/v2/search?country=saudi-arabia&page_size=100&fields=code,product_name,image_front_url,labels,categories,categories_tags,allergens,ingredients_text,nutriments"
     response = requests.get(url)
 
     if response.status_code == 200:
@@ -22,18 +21,18 @@ def fetch_product_data():
         extracted_data = []
         for product in products:
             extracted_data.append({
-    "product_id": product.get("code", "Unknown"),
-    "name": product.get("product_name", "Unknown"),
-    "image": product.get("image_front_url", ""),
-    "category": product.get("categories_tags", ["Unknown"])[0] if product.get("categories_tags") else "Unknown",
-    "ingredients": product.get("ingredients_text", "Not available"),
-    "nutritional_info": {
-        "fat": product.get("nutriments", {}).get("fat", "N/A"),
-        "protein": product.get("nutriments", {}).get("proteins", "N/A"),
-        "calories": product.get("nutriments", {}).get("energy-kcal", "N/A"),
-    },
-    "tags": product.get("labels", "") + " " + product.get("categories", "") + " " + product.get("allergens", "")
-})
+                "product_id": product.get("code", "Unknown"),
+                "name": product.get("product_name", "Unknown"),
+                "image": product.get("image_front_url", ""),
+                "category": product.get("categories_tags", ["Unknown"])[0] if product.get("categories_tags") else "Unknown",
+                "ingredients": product.get("ingredients_text", "Not available"),
+                "nutritional_info": {
+                    "fat": product.get("nutriments", {}).get("fat", "N/A"),
+                    "protein": product.get("nutriments", {}).get("proteins", "N/A"),
+                    "calories": product.get("nutriments", {}).get("energy-kcal", "N/A"),
+                },
+                "tags": product.get("labels", "") + " " + product.get("categories", "") + " " + product.get("allergens", "")
+            })
         return extracted_data
     else:
         return []
@@ -48,6 +47,12 @@ def recommend_products():
     data = request.get_json()
     user_positive_preferences = " ".join(data.get("positive_preferences", []))
     user_negative_preferences = [x.lower() for x in data.get("negative_preferences", [])]
+
+    # Pagination parameters
+    page = int(data.get("page", 1))
+    page_size = int(data.get("page_size", 10))
+    start = (page - 1) * page_size
+    end = start + page_size
 
     products = fetch_product_data()
     if not products:
@@ -67,7 +72,8 @@ def recommend_products():
         return False
 
     filtered_df = df[~df["tags"].apply(lambda x: contains_negative(x, user_negative_preferences))]
-    recommended = filtered_df.sort_values(by="similarity_score", ascending=False).head(10)
+    recommended = filtered_df.sort_values(by="similarity_score", ascending=False).iloc[start:end]
+
     return jsonify(recommended.to_dict(orient="records"))
 
 # -------------------- Meal Plan Recommendation --------------------
