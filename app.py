@@ -5,6 +5,7 @@ import json
 from flask_cors import CORS
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import random
 
 app = Flask(__name__)
 CORS(app)
@@ -123,12 +124,14 @@ def generate_meal_plan():
 
         meal_types = ["breakfast", "lunch", "dinner"]
         for meal_type in meal_types:
-            meals_of_type = df[df["category"] == meal_type].sort_values(by="similarity_score", ascending=False)
+            top_meals = df[df["category"] == meal_type].sort_values(by="similarity_score", ascending=False).head(10)
+            meals_of_type = top_meals.sample(frac=1).reset_index(drop=True)
+
             for _, meal in meals_of_type.iterrows():
                 if total_calories + meal["calories"] <= calorie_limit:
                     selected_meals[meal_type] = {
-                        "name": meal["name"],
-                        "ingredients": meal["ingredients"]
+                        "name": meal.get("name", "Unknown"),
+                        "ingredients": meal.get("ingredients", [])
                     }
                     total_calories += meal["calories"]
                     break
