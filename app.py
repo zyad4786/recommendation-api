@@ -38,15 +38,6 @@ def fetch_product_data():
     else:
         return []
 
-def preload_categories():
-    global CACHED_CATEGORIES
-    products = fetch_product_data()
-    categories = list(set([
-        p.get("category", "unknown").lower()
-        for p in products if p.get("category")
-    ]))
-    CACHED_CATEGORIES = sorted(categories)
-
 def preprocess_products(product_data):
     df = pd.DataFrame(product_data)
     df["tags"] = df["tags"].str.lower()
@@ -92,6 +83,18 @@ def recommend_products():
 
 @app.route("/available_categories", methods=["GET"])
 def get_available_categories():
+    global CACHED_CATEGORIES
+    if not CACHED_CATEGORIES:
+        try:
+            products = fetch_product_data()
+            categories = list(set([
+                p.get("category", "unknown").lower()
+                for p in products if p.get("category")
+            ]))
+            CACHED_CATEGORIES = sorted(categories)
+        except Exception as e:
+            return jsonify({"error": f"Failed to load categories: {str(e)}"}), 500
+
     return jsonify(CACHED_CATEGORIES)
 
 # -------------------- Meal Plan Recommendation --------------------
@@ -145,9 +148,6 @@ def generate_meal_plan():
         "recommended_meals": recommended_meals,
         "total_calories": total_calories
     })
-
-# Preload cache when server starts
-preload_categories()
 
 if __name__ == "__main__":
     app.run(debug=True)
