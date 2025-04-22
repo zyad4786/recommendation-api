@@ -118,32 +118,28 @@ def generate_meal_plan():
     df = df[~df["tags"].apply(lambda x: contains_meal_negative(x, user_negative_preferences))]
 
     def get_meal_plan(df, calorie_limit):
-        selected_meals = {"breakfast": None, "lunch": None, "dinner": None}
+        selected_meals = {}
         total_calories = 0
-        grocery_list = set()
 
-        meal_options = {
-            "breakfast": df[df["category"] == "breakfast"].sort_values(by="similarity_score", ascending=False).to_dict(orient="records"),
-            "lunch": df[df["category"] == "lunch"].sort_values(by="similarity_score", ascending=False).to_dict(orient="records"),
-            "dinner": df[df["category"] == "dinner"].sort_values(by="similarity_score", ascending=False).to_dict(orient="records"),
-        }
-
-        for meal_type in ["breakfast", "lunch", "dinner"]:
-            for meal in meal_options[meal_type]:
+        meal_types = ["breakfast", "lunch", "dinner"]
+        for meal_type in meal_types:
+            meals_of_type = df[df["category"] == meal_type].sort_values(by="similarity_score", ascending=False)
+            for _, meal in meals_of_type.iterrows():
                 if total_calories + meal["calories"] <= calorie_limit:
-                    selected_meals[meal_type] = meal["name"]
+                    selected_meals[meal_type] = {
+                        "name": meal["name"],
+                        "ingredients": meal["ingredients"]
+                    }
                     total_calories += meal["calories"]
-                    grocery_list.update(meal["ingredients"])
                     break
 
-        return selected_meals, total_calories, list(grocery_list)
+        return selected_meals, total_calories
 
-    recommended_meals, total_calories, grocery_list = get_meal_plan(df, calorie_limit)
+    recommended_meals, total_calories = get_meal_plan(df, calorie_limit)
 
     return jsonify({
         "recommended_meals": recommended_meals,
-        "total_calories": total_calories,
-        "grocery_list": grocery_list
+        "total_calories": total_calories
     })
 
 if __name__ == "__main__":
