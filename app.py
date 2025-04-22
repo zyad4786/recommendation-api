@@ -5,16 +5,16 @@ import json
 from flask_cors import CORS
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-import random
 
 app = Flask(__name__)
 CORS(app)
 
 # -------------------- Product Recommendation --------------------
+CACHED_CATEGORIES = []
 
 def fetch_product_data():
     url = "https://world.openfoodfacts.org/api/v2/search?country=saudi-arabia&page_size=100&fields=code,product_name,image_front_url,labels,categories,categories_tags,allergens,ingredients_text,nutriments"
-    response = requests.get(url)
+    response = requests.get(url, timeout=10)
 
     if response.status_code == 200:
         data = response.json()
@@ -37,6 +37,15 @@ def fetch_product_data():
         return extracted_data
     else:
         return []
+
+def preload_categories():
+    global CACHED_CATEGORIES
+    products = fetch_product_data()
+    categories = list(set([
+        p.get("category", "unknown").lower()
+        for p in products if p.get("category")
+    ]))
+    CACHED_CATEGORIES = sorted(categories)
 
 def preprocess_products(product_data):
     df = pd.DataFrame(product_data)
@@ -83,15 +92,9 @@ def recommend_products():
 
 @app.route("/available_categories", methods=["GET"])
 def get_available_categories():
-    products = fetch_product_data()
-    categories = list(set([
-        p.get("category", "unknown").lower()
-        for p in products if p.get("category")
-    ]))
-    return jsonify(sorted(categories))
+    return jsonify(CACHED_CATEGORIES)
 
 # -------------------- Meal Plan Recommendation --------------------
-
 with open("meal_dataset.json", "r") as file:
     meals = json.load(file)
 
@@ -124,14 +127,12 @@ def generate_meal_plan():
 
         meal_types = ["breakfast", "lunch", "dinner"]
         for meal_type in meal_types:
-            top_meals = df[df["category"] == meal_type].sort_values(by="similarity_score", ascending=False).head(10)
-            meals_of_type = top_meals.sample(frac=1).reset_index(drop=True)
-
+            meals_of_type = df[df["category"] == meal_type].sort_values(by="similarity_score", ascending=False)
             for _, meal in meals_of_type.iterrows():
                 if total_calories + meal["calories"] <= calorie_limit:
                     selected_meals[meal_type] = {
-                        "name": meal.get("name", "Unknown"),
-                        "ingredients": meal.get("ingredients", [])
+                        "name": meal["name"],
+                        "ingredients": meal["ingredients"]
                     }
                     total_calories += meal["calories"]
                     break
@@ -144,6 +145,9 @@ def generate_meal_plan():
         "recommended_meals": recommended_meals,
         "total_calories": total_calories
     })
+
+# Preload cache when server starts
+preload_categories()
 
 if __name__ == "__main__":
     app.run(debug=True)
