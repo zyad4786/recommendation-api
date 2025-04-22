@@ -55,9 +55,13 @@ def recommend_products():
     start = (page - 1) * page_size
     end = start + page_size
 
-    products = fetch_product_data()
+    try:
+        products = fetch_product_data()
+    except Exception as e:
+        return jsonify({"error": f"Failed to retrieve products: {str(e)}"}), 500
+
     if not products:
-        return jsonify({"error": "Failed to retrieve products"}), 500
+        return jsonify({"error": "No products found."}), 500
 
     df = preprocess_products(products)
 
