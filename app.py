@@ -10,11 +10,10 @@ app = Flask(__name__)
 CORS(app)
 
 # -------------------- Product Recommendation --------------------
-CACHED_CATEGORIES = []
 
 def fetch_product_data():
     url = "https://world.openfoodfacts.org/api/v2/search?country=saudi-arabia&page_size=100&fields=code,product_name,image_front_url,labels,categories,categories_tags,allergens,ingredients_text,nutriments"
-    response = requests.get(url, timeout=10)
+    response = requests.get(url)
 
     if response.status_code == 200:
         data = response.json()
@@ -55,13 +54,9 @@ def recommend_products():
     start = (page - 1) * page_size
     end = start + page_size
 
-    try:
-        products = fetch_product_data()
-    except Exception as e:
-        return jsonify({"error": f"Failed to retrieve products: {str(e)}"}), 500
-
+    products = fetch_product_data()
     if not products:
-        return jsonify({"error": "No products found."}), 500
+        return jsonify({"error": "Failed to retrieve products"}), 500
 
     df = preprocess_products(products)
 
@@ -87,21 +82,15 @@ def recommend_products():
 
 @app.route("/available_categories", methods=["GET"])
 def get_available_categories():
-    global CACHED_CATEGORIES
-    if not CACHED_CATEGORIES:
-        try:
-            products = fetch_product_data()
-            categories = list(set([
-                p.get("category", "unknown").lower()
-                for p in products if p.get("category")
-            ]))
-            CACHED_CATEGORIES = sorted(categories)
-        except Exception as e:
-            return jsonify({"error": f"Failed to load categories: {str(e)}"}), 500
-
-    return jsonify(CACHED_CATEGORIES)
+    products = fetch_product_data()
+    categories = list(set([
+        p.get("category", "unknown").lower()
+        for p in products if p.get("category")
+    ]))
+    return jsonify(sorted(categories))
 
 # -------------------- Meal Plan Recommendation --------------------
+
 with open("meal_dataset.json", "r") as file:
     meals = json.load(file)
 
@@ -129,28 +118,32 @@ def generate_meal_plan():
     df = df[~df["tags"].apply(lambda x: contains_meal_negative(x, user_negative_preferences))]
 
     def get_meal_plan(df, calorie_limit):
-        selected_meals = {}
+        selected_meals = {"breakfast": None, "lunch": None, "dinner": None}
         total_calories = 0
+        grocery_list = set()
 
-        meal_types = ["breakfast", "lunch", "dinner"]
-        for meal_type in meal_types:
-            meals_of_type = df[df["category"] == meal_type].sort_values(by="similarity_score", ascending=False)
-            for _, meal in meals_of_type.iterrows():
+        meal_options = {
+            "breakfast": df[df["category"] == "breakfast"].sort_values(by="similarity_score", ascending=False).to_dict(orient="records"),
+            "lunch": df[df["category"] == "lunch"].sort_values(by="similarity_score", ascending=False).to_dict(orient="records"),
+            "dinner": df[df["category"] == "dinner"].sort_values(by="similarity_score", ascending=False).to_dict(orient="records"),
+        }
+
+        for meal_type in ["breakfast", "lunch", "dinner"]:
+            for meal in meal_options[meal_type]:
                 if total_calories + meal["calories"] <= calorie_limit:
-                    selected_meals[meal_type] = {
-                        "name": meal["name"],
-                        "ingredients": meal["ingredients"]
-                    }
+                    selected_meals[meal_type] = meal["name"]
                     total_calories += meal["calories"]
+                    grocery_list.update(meal["ingredients"])
                     break
 
-        return selected_meals, total_calories
+        return selected_meals, total_calories, list(grocery_list)
 
-    recommended_meals, total_calories = get_meal_plan(df, calorie_limit)
+    recommended_meals, total_calories, grocery_list = get_meal_plan(df, calorie_limit)
 
     return jsonify({
         "recommended_meals": recommended_meals,
-        "total_calories": total_calories
+        "total_calories": total_calories,
+        "grocery_list": grocery_list
     })
 
 if __name__ == "__main__":
