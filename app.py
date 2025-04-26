@@ -55,7 +55,7 @@ def recommend_products():
     df = df[~df["tags"].apply(lambda x: contains_negative(x, user_negative_preferences))]
 
     if category_filter:
-        df = df[df["category"].str.lower() == category_filter]
+        df = df[df["category"].str.lower() == f"en:{category_filter}"]
 
     recommended = df.sort_values(by="similarity_score", ascending=False).iloc[start:end]
 
