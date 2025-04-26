@@ -12,36 +12,20 @@ CORS(app)
 
 # -------------------- Product Recommendation --------------------
 
-def fetch_product_data():
-    url = "https://world.openfoodfacts.org/api/v2/search?country=saudi-arabia&page_size=100&fields=code,product_name,image_front_url,labels,categories,categories_tags,allergens,ingredients_text,nutriments"
-    response = requests.get(url)
+# Load products from the local JSON file once at startup
+with open('final_clean_productsV2.json', 'r', encoding='utf-8') as file:
+    product_data = json.load(file)
 
-    if response.status_code == 200:
-        data = response.json()
-        products = data["products"]
-        extracted_data = []
-        for product in products:
-            extracted_data.append({
-                "product_id": product.get("code", "Unknown"),
-                "name": product.get("product_name", "Unknown"),
-                "image": product.get("image_front_url", ""),
-                "category": product.get("categories_tags", ["Unknown"])[0] if product.get("categories_tags") else "Unknown",
-                "ingredients": product.get("ingredients_text", "Not available"),
-                "nutritional_info": {
-                    "fat": product.get("nutriments", {}).get("fat", "N/A"),
-                    "protein": product.get("nutriments", {}).get("proteins", "N/A"),
-                    "calories": product.get("nutriments", {}).get("energy-kcal", "N/A"),
-                },
-                "tags": product.get("labels", "") + " " + product.get("categories", "") + " " + product.get("allergens", "")
-            })
-        return extracted_data
-    else:
-        return []
-
+# Convert to DataFrame
 def preprocess_products(product_data):
     df = pd.DataFrame(product_data)
-    df["tags"] = df["tags"].str.lower()
+    
+    # Create tags using only ingredients + labels (no categories!)
+    df['tags'] = (df['ingredients'].fillna('') + ' ' + df['labels'].fillna('')).str.lower()
+    
     return df
+
+products_df = preprocess_products(product_data)
 
 @app.route("/recommend_products", methods=["POST"])
 def recommend_products():
@@ -55,11 +39,7 @@ def recommend_products():
     start = (page - 1) * page_size
     end = start + page_size
 
-    products = fetch_product_data()
-    if not products:
-        return jsonify({"error": "Failed to retrieve products"}), 500
-
-    df = preprocess_products(products)
+    df = products_df.copy()
 
     vectorizer = TfidfVectorizer()
     item_vectors = vectorizer.fit_transform(df["tags"])
@@ -72,21 +52,21 @@ def recommend_products():
                 return True
         return False
 
-    filtered_df = df[~df["tags"].apply(lambda x: contains_negative(x, user_negative_preferences))]
+    df = df[~df["tags"].apply(lambda x: contains_negative(x, user_negative_preferences))]
 
     if category_filter:
-        filtered_df = filtered_df[filtered_df["category"].str.lower() == category_filter]
+        df = df[df["category"].str.lower() == category_filter]
 
-    recommended = filtered_df.sort_values(by="similarity_score", ascending=False).iloc[start:end]
+    recommended = df.sort_values(by="similarity_score", ascending=False).iloc[start:end]
 
-    return jsonify(recommended.to_dict(orient="records"))
+    return jsonify(recommended.drop(columns=["tags"]).to_dict(orient="records"))
 
 @app.route("/available_categories", methods=["GET"])
 def get_available_categories():
-    products = fetch_product_data()
+    # Just return all categories in the dataset (you said you'll hardcode later but this keeps it for now)
     categories = list(set([
         p.get("category", "unknown").lower()
-        for p in products if p.get("category")
+        for p in product_data if p.get("category")
     ]))
     return jsonify(sorted(categories))
 
